@@ -1,0 +1,118 @@
+/* Tailwind's base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.leaderboard-container {
+    font-family: "Arial", sans-serif;
+    padding: 20px;
+    text-align: center;
+    background:"white";
+    min-height: 100vh;
+  }
+  
+  .leaderboard-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .leaderboard-container p {
+    font-size: 1.2rem;
+    color: #5e35b1;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+  }
+  
+  th {
+    background-color: #7e57c2;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  td {
+    color: #6a1b9a;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f3e5f5;
+  }
+  
+  tr:hover {
+    background-color: #e1bee7;
+    transition: background 0.3s ease;
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:first-of-type {
+    background: linear-gradient(90deg, #ff4081, #ec407a);
+    color: #ffffff;
+  }
+  
+  button:first-of-type:hover {
+    background: linear-gradient(90deg, #ec407a, #ff4081);
+  }
+  
+  button:last-of-type {
+    background: linear-gradient(90deg, #7e57c2, #5e35b1);
+    color: #ffffff;
+  }
+  
+  button:last-of-type:hover {
+    background: linear-gradient(90deg, #5e35b1, #7e57c2);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+    }
+  
+    th, td {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }
+    
+   
